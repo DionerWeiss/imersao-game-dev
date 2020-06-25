@@ -1,16 +1,17 @@
 
 class Animacao {
-    constructor(matriz, imagem, x, larguraPersonagem, alturaPersonagem, larguraSprite, alturaSprite) {
-        this.matriz = matriz;
-        this.imagem = imagem;
-        this.x = x;
-        this.y = height - alturaPersonagem;
-        this.larguraPersonagem = larguraPersonagem;
-        this.alturaPersonagem = alturaPersonagem;
-        this.larguraSprite = larguraSprite;
-        this.alturaSprite = alturaSprite;
+    constructor(matriz, imagem, x, variacaoY, larguraPersonagem, alturaPersonagem, larguraSprite, alturaSprite) {
+        this.matriz = matriz
+        this.imagem = imagem
+        this.x = x
+        this.variacaoY = variacaoY
+        this.larguraPersonagem = larguraPersonagem
+        this.alturaPersonagem = alturaPersonagem
+        this.y = height - this.alturaPersonagem - this.variacaoY
+        this.larguraSprite = larguraSprite
+        this.alturaSprite = alturaSprite
 
-        this.frameAtual = 0;
+        this.frameAtual = 0
 
     }
 
@@ -24,15 +25,15 @@ class Animacao {
             this.matriz[this.frameAtual][1],
             this.larguraSprite,
             this.alturaSprite
-        );
+        )
 
-        this.anima();
+        this.anima()
     }
 
     anima() {
-        this.frameAtual++;        
+        this.frameAtual++        
         if (this.frameAtual >= this.matriz.length) {
-            this.frameAtual = 0;
+            this.frameAtual = 0
         }
         
 
