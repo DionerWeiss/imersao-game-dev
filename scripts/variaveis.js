@@ -5,6 +5,7 @@ let imagemInigoGrande
 let imagemInimigoVoador
 let imagemGameOver
 let imagemTelaInicial
+let imagemVida
 let fonteTelaInicial
 let botaoGerenciador
 
@@ -13,6 +14,7 @@ let somDoPulo
 let somDoJogo
 let personagem
 let inimigo
+let vida
 let inimigoGrande
 let inimigoVoador
 
@@ -23,6 +25,8 @@ let jogo
 
 let cenaAtual = 'telaInicial'
 let cenas
+
+let fita
 
 
 
